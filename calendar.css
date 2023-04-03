@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    background: #fbe6ed;
+}
+.container{
+    height:100%;
+    width: 100%;
+    background-image: url(C:/xampp/htdocs/feedback/Sri/homeb.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+nav{
+    flex: 1;
+    padding-left: 60px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    font-size: 20px;
+    margin: 0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+}
+nav ul li a:hover{
+    color:#7f7f7f;
+    
+}
+nav li.active a{
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+}
+#but{
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    align-content: flex-end;
+}
+.login{
+    float: right;
+    color: black;
+    border: 2px solid #333;
+    padding:7px;  
+    border-radius: 10px;  
+    background-color:rgb(173, 247, 222);
+}
+.login:hover{
+    background-color: white;
+    box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.75);
+}
+
+.calendar{
+    padding: 20px 40px;
+}
+.months-container{
+    justify-content: center;
+    gap: 40px;
+}
+.calendar .months-container .month-container{
+    background:#fff ;
+    padding: 20px;
+    min-width: 280px;
+    box-shadow: 15px 15px 40px rgba(0,0,0,0.15);
+}
+.calendar table.month th.month-title{
+    color: #5a8990;
+    font-size: 1.9em;
+    font-weight: 200;
+    font-family: 'Dancing Script', cursive;
+}
+table.month td:first-child,
+table.month td:last-child,
+table.month thead tr:nth-child(2) th:first-child,
+table.month thead tr:nth-child(2) th:last-child{
+    color: #f75c90;
+}
+.calendar table.month td.day .day-content{
+    padding: 6px 8px;
+}
+.calendar table.month th.day-header{
+    color: #777;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+.month tr td{
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #777;
+}
+table.month td.day .day-content:hover{
+    background: #f75c90;
+    color: #fff;
+}
+.calendar .calendar-header{
+    border: none;
+}
+.calendar .calendar-header table th:hover{
+    background: transparent;
+}
+.calendar .calendar-header .year-title{
+    font-size: 2.25em;
+    color: #f75c90;
+    font-family: 'Dancing Script', cursive;
+}
+.calendar .calendar-header .year-neighbor{
+    font-size: 2.25em;
+}
+.calendar .calendar-header .year-neighbor2{
+    font-size: 1.5em;
+}
+

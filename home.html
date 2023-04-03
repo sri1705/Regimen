@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="./logo.png" class="logo">
+                <nav>
+                <label for="btn1" class="icon">
+                    <i class="fa fa-bars"></i>
+                </label>
+                    <ul>
+                        <li id="show" class="active" ><a href="home.html">Home</a></li>
+                        <li id="show"><a href="schedule.html">Calendar</a></li>
+                        <li id="show"><a href="index.html">Weather</a></li>
+                        <li id="show"><a href="todolist.html">To Do List</a></li>
+                        <li id="show"><a href="yourday.html">About  Your  Day</a></li>                     
+
+                    </ul>
+
+                </nav>
+                <button class="login"><a href="#" class="but" id="but">Login</a></button>
+
+            </div>
+            <div class="content">
+                <h1>Learn from your past and shut the door behind to live in present.</h1>
+            </div>
+        </div>
+        <div class="popup">
+            <div class="form-box">
+                <img src="close.png" alt="close" class="close">
+                <div class="button-box">
+                    <div id="btn"></div>  
+                    <button type="button" class="toggle-btn" onclick="signin()"> Sign In</button>
+                    <button type="button" class="toggle-btn" onclick="signup()"> Sign Up</button>
+                </div>
+                
+                <form method="post" action="register" class="login-form" id="signup">
+                    <input type="text" name="name" class="form-field" placeholder="Username" required>
+                    <input type="email" name="email" class="form-field" placeholder="Email Address" required>
+                    <input type="password" name="pass" class="form-field" placeholder="Password" required>
+                    <button type="submit" class="submit">Sign Up</button>
+                </form>
+                <form class="login-form" id="signin">
+                    <input type="text" name="username" class="form-field" placeholder="Username" required>
+                    <input type="password" name="pword" class="form-field" placeholder="Password" required>
+                    <input type="checkbox" name="check" class="checkbox"><span>Remember Password</span> 
+                    <button type="submit" name="" class="submit">Sign In</button>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        document.getElementById("but").addEventListener("click", function(){
+            document.querySelector(".popup").style.display="flex";
+        })
+
+        document.querySelector(".close").addEventListener("click",function(){
+            document.querySelector(".popup").style.display="none";
+        })
+
+        $(document).on('click','ul li',function(){
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+        
+        var x = document.getElementById("signin");
+        var y = document.getElementById("signup");
+        var z = document.getElementById("btn");
+
+        function signup(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+        function signin(){
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0px";
+        }
+    </script>
+</html>

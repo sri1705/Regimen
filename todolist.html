@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="todolist.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="C:\Users\Srisakthi\Desktop\Sri\logo.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="ind.html">Home</a></li>
+                    <li><a href="schedule.html">Calendar</a></li>
+                    <li><a href="weather.html">Weather</a></li>
+                    <li class="active"><a href="todolist.html">To Do List</a></li>
+                    <li><a href="yourday.html">About Your Day</a></li>
+                    <button class="login"><a href="#" class="but" id="but">Logout</a></button>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="tcontainer">
+            <div class="addTask">
+                <input type="text" id="txt" placeholder="What do you want to do...">
+                <button onclick="display()"><i class="fa fa-plus"></i></button>
+            </div>
+            <ol class="notCompleted">
+                <h3>Not Done Yet</h3>
+            </ol>
+            <ol class="Completed">
+                <h3>Done</h3>
+            </ol>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        function display(){
+            var doList =document.getElementById("txt").value;
+            localStorage.setItem("textvalue",doList);
+            return false;
+        }
+        $(document).on('click', 'ul li', function () {
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+
+
+        const input = document.querySelector('input');
+        const btn = document.querySelector('.addTask > button');
+
+        btn.addEventListener('click', addList);
+        input.addEventListener('keyup', (e) => {
+            (e.keyCode === 13 ? addList(e) : null);
+        })
+
+        function addList(e) {
+            const notCompleted = document.querySelector('.notCompleted');
+            const Completed = document.querySelector('.Completed');
+
+
+            const newLi = document.createElement('li');
+            const checkBtn = document.createElement('button');
+            const delBtn = document.createElement('button');
+
+            checkBtn.innerHTML = '<i class="fa fa-check"></i>';
+            delBtn.innerHTML = '<i class="fa fa-trash"></i>';
+
+            if (input.value !== '') {
+                newLi.textContent = input.value;
+                input.value = '';
+                notCompleted.appendChild(newLi);
+                newLi.appendChild(checkBtn);
+                newLi.appendChild(delBtn);
+            }
+            checkBtn.addEventListener('click', function () {
+                const parent = this.parentNode;
+                parent.remove();
+                Completed.appendChild(parent);
+                checkBtn.style.display = 'none';
+            });
+            delBtn.addEventListener('click', function () {
+                const parent = this.parentNode;
+                parent.remove();
+
+            });
+
+        }
+    </script>
+</body>
+
+</html>

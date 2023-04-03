@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calendar</title>
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/js-year-calendar@latest/dist/js-year-calendar.min.css" />
+        <link rel="stylesheet" href="calendar.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="C:\Users\Srisakthi\Desktop\Sri\logo.png" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li class="active"><a href="calendar.html">Calendar</a></li>
+                        <li><a href="index.html">Weather</a></li>
+                        <li><a href="todolist.html">To Do List</a></li>
+                        <li><a href="yourday.html">About  Your  Day</a></li>                     
+                        <button class="login"><a href="#" class="but" id="but">Login</a></button>
+
+                    </ul>
+                </nav>
+            </div>
+        <div class="calendar">
+
+        </div>
+        </div>
+        <script src="https://unpkg.com/js-year-calendar@latest/dist/js-year-calendar.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script type="text/javascript">
+            
+            new Calendar(document.querySelector('.calendar'));
+            $(document).on('click','ul li',function(){
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,299 @@
+/*body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-content .swiper{
+    width: 100%;
+    position: relative;
+}
+.card{
+    max-width: 300px;
+    margin-top: 20px;
+    text-align: center;
+    display: inline-block;
+    padding: 3% 4% 3%;
+}
+.swiper-paging {
+    padding-top: 10%;
+  }
+
+  .swiper-navbtn {
+    color: #000;
+    transition: color 0.3s ease;
+  }
+
+  .swiper-navbtn:hover {
+    color: darkslategray;
+  }
+
+  .swiper-navbtn::after {
+    font-size: 40px;
+  }
+
+  .swiper-button-next {
+    right: 0;
+  }
+
+  .swiper-button-prev {
+    padding-left: 1%;
+  }*/
+
+
+
+  /*body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    overflow: hidden;
+  }
+  .slide-container{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(to right,#F9FFA4,#FFA1A1);
+  }
+  .image-slider{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+  }
+
+.slides-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px 0 30px;
+}
+.img{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    transition: 0.5s;
+}
+.button{
+    position: absolute;
+    width: 240px;
+    height: 250px;
+    transition: 0.5s;
+    
+}
+.button:hover{
+    margin: 0;
+}
+#slider-span1:target ~ .image-slider #img1,
+#slider-span1:target ~ .image-slider #button-1{
+    width: 350px;
+    height: 350px;
+    background-color: transparent;
+    filter:saturate(100%);
+}
+#slider-span2:target ~ .image-slider #img2,
+#slider-span2:target ~ .image-slider #button-2{
+    width: 350px;
+    height: 350px;
+    background-color: transparent;
+    filter:saturate(100%);
+}
+#slider-span3:target ~ .image-slider #img3,
+#slider-span3:target ~ .image-slider #button-3{
+    width: 350px;
+    height: 350px;
+    background-color: transparent;
+    filter:saturate(100%);
+}
+#slider-span4:target ~ .image-slider #img4,
+#slider-span4:target ~ .image-slider #button-4{
+    width: 350px;
+    height: 350px;
+    background-color: transparent;
+    filter:saturate(100%);
+}
+#slider-span5:target ~ .image-slider #img5,
+#slider-span5:target ~ .image-slider #button-5{
+    width: 350px;
+    height: 350px;
+    background-color: transparent;
+    filter:saturate(100%);
+}
+#slider-span6:target ~ .image-slider #img6,
+#slider-span6:target ~ .image-slider #button-6{
+    width: 350px;
+    height: 350px;
+    background-color: transparent;
+    filter:saturate(100%);
+}
+#slider-span1:target ~ .image-slider {left: 70%;}
+#slider-span2:target ~ .image-slider {left: 50%;}
+#slider-span3:target ~ .image-slider {left: 25%;}
+#slider-span4:target ~ .image-slider {left: -25%;}
+#slider-span5:target ~ .image-slider {left: -50%;}
+#slider-span6:target ~ .image-slider {left: -70%;}
+
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ }
+ .slide-container{
+    max-width: 1120px;
+    width: 100%;
+    background-color: gray;
+    padding: 40px 0;
+ }
+ .slide-content{
+    padding: 45px 20px;
+    margin: 0 40px;
+
+ }
+ .card{
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    background: linear-gradient(to right,#F9FFA4,#FFA1A1);
+ }
+ .image-content,.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+ }
+ .image-content{
+    position: relative;
+ }
+ .overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+ }
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    padding: 3px;
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.swiper-navbtn{
+    color: black;
+    transition: color 0.3s ease;
+} 
+.swiper-navbtn:hover{
+    color: 	#708090;
+}
+.swiper-navbtn::after,
+.swiper-navbtn::before{
+    font-size: 50px;
+}
+.swiper-pagination-bullet{
+    background-color: #F9FFA4;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-color: #FFA1A1;
+}
+@media  screen and (max-width:768px) {
+    .slide-content{
+        margin: 0 10px;
+    }
+    .swiper-navbtn{
+        display: none;
+    }
+}*/
+*{
+    box-sizing: border-box;
+}
+h1,h3{
+    font-weight: 400;
+}
+.weather-app{
+    min-height: 100vh;
+    background-image: url(C:/xampp/htdocs/feedback/Sri/drizzle.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    transition: 500ms;
+    opacity: 1;
+}
+.weather-app::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 0;
+}
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2em 3em 4em 3em;
+}
+.container > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.city-time,.temp,.weather{
+    margin: 0 1em;
+}
+.city-time h1{
+    margin: 0;
+    margin-bottom: 0.2em;
+    font-size: 3em;
+}
+.temp{
+    font-size: 7em;
+    margin: 0;
+}
+@media screen and (max-width:800px){
+    .container{
+        position: relative;
+        width: 100%;
+        top: initial;
+    }
+}
+@media screen and (max-width:500px){
+    html{
+        font-size: 12px;
+    }
+}
+@media screen and(max-width:300px){
+    .weather-app{
+        min-height: 40em;
+    }
+}

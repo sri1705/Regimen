@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Quicksand', sans-serif;
+  height:100vh;
+    width: 100%;
+    background-image: url(./homeb.jpg);
+    background-position: center;
+    background-size: cover;
+}
+nav{
+  background: white;
+  color: black;
+  height: 80px;
+  width: 100%;
+}
+nav li a.but{
+  color: black;
+  border: 2px solid #333;
+  padding:7px;  
+  border-radius: 10px;  
+  background-color:rgb(173, 247, 222);
+}
+nav li a:hover{
+  background: white;
+}
+.logo{
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav li.active a{
+  color: black;
+  font-size: 25px;
+  font-weight: 600;
+}
+nav ul li a{
+  color: black;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+a.active,a:hover{
+  background: #7f7f7f;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 1104px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: black;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+.content h1{
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: 200px;
+  margin-bottom: 15px;
+  color: #232d60;
+}
+.login{
+  float: right;
+  color: black;
+  border: 2px solid #333;
+  padding:7px;  
+  border-radius: 10px;  
+  background-color:rgb(173, 247, 222);
+}
+.login:hover{
+  background-color: white;
+  box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.75);
+}
+.popup{
+  background: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+.form-box{
+  height: 480px;
+  width: 380px;
+  position: relative;
+}
+.form-box{
+  width: 380px;
+  height: 480px;
+  border: 5px solid black;
+  margin: 6% auto;
+  background: white;
+  box-shadow: 0 0 10px 3px #282929;
+  border-radius: 25px;
+  position: relative;
+  padding: 5px;
+  overflow: hidden;
+}
+.button-box{
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 3px #9AFBFA;
+  border-radius: 35px;
+}
+.toggle-btn{
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none ;
+  position: relative;
+
+}
+#btn{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: linear-gradient(to right, #9AFBFA,#D071F9) ;
+  border-radius: 30px;
+  transition: 1s;
+}
+.sign-in{
+  margin: 30px auto;
+  text-align: center;
+}
+.sign-in img{
+   width: 30px;
+   margin: 0 10px;
+   box-shadow: 0 0 10px 0 #7f7f7f;
+   border-radius: 50%;
+   cursor: pointer;
+}
+.login-form{
+  border: 0px solid;
+  top: 180px;
+  position: absolute;
+  width: 280px;
+  transition: 1s;
+}
+.form-field{
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid #999;
+  outline: none;
+  background: transparent;
+}
+.submit{
+  width: 85%;
+  padding: 10px 35px;
+  cursor: pointer;
+  display: block;
+  margin:auto;
+  background: linear-gradient(to right, #9AFBFA,#D071F9) ;
+  border: 0;
+  outline: none;
+  border-radius: 25px;
+}
+.checkbox{
+  margin:30px 5px;
+}
+span{
+  color: #777;
+  font-size: 12px;
+  bottom: 64px;
+  position: absolute;
+}
+#signin{
+  left: 50px;
+}
+#signup{
+  left: 450px;
+}
+#signup .submit{
+  margin-top: 30px;
+}
+.close{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  top: 0px;
+  right: 0px;
+}
+.close:hover{
+  box-shadow: rgba(0,0,0,0.6);
+
+}

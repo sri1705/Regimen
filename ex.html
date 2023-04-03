@@ -1,0 +1,256 @@
+<!--DOCTYPE html>
+<html>
+  <head>
+    <title>Sort</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="ex.css">
+  </head>
+  <body>
+    <div class="grid">
+      <div class="item">
+        <div class="item-content">
+            <span class="order">1</span>A
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-content">
+            <span class="order">2</span>B
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-content">
+            <span class="order">3</span>C
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-content">
+            <span class="order">4</span>D   <script src="./swiper-bundle.min.js"></script>
+  <script src="./hot.js"></script>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.2/web-animations.min.js" integrity="sha512-oAY57i8MXmaOP7pAylNLnULAM4QLV3uGnvnXVY4zF229/zFzTvG2/5YIgH8iN8oZR2hnbkiDPd4JCJGaH4oG6g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" integrity="sha512-UXumZrZNiOwnTcZSHLOfcTs0aos2MzBWHXOHOuB0J/R44QB0dwY5JgfbvljXcklVf65Gc4El6RjZ+lnwd2az2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/muuri/0.5.3/muuri.min.js"></script><link rel="stylesheet" href="./swiper-bundle.min.css">
+    <--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/utils/Draggable.min.js"></script>-->
+    <!--<script src="ex.js"></script>>
+    script>
+      const grid=new Muuri('.grid', {
+        dragEnabled: true,
+        dragAxis:'x',
+        fillGaps: true
+      });
+    script>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sort</title>
+    
+    <link rel="stylesheet" href="ex.css">
+  </head>
+<body>
+  <--div class="main-content swiper mySwiper">
+    </br>
+    <div class="graphicdesign ">
+
+      <div class="graphic-design swiper-wrapper ">
+        <div class="card swiper-slide" style="padding-bottom: 35px;">
+          <img src="C:\xampp\htdocs\feedback\Sri\hot.jpg" class="water" style="padding-bottom: 0px;height:200px;">
+          <h4>Drink plenty of cool fluids, but avoid caffeine and alcohol.</h4>
+        </div>
+        <div class="card swiper-slide" style="padding-bottom: 35px;">
+          <img src="file:///C:/xampp/htdocs/feedback/Sri/sunglass.jpg" class="water" style="height: 200px;">
+          <h4>Dress in light, loose clothing. Wear a hat and sunglasses.</h4>
+        </div>
+        <div class="card swiper-slide" style="padding-bottom: 35px;">
+          <img src="C:\xampp\htdocs\feedback\Sri\sunscreen.jpg" class="water" style="height: 200px;">
+          <h4>Wear sunscreen with a high sun protection factor (SPF) to protect your skin from sunburn.</h4>
+        </div>
+        <div class="card swiper-slide" style="padding-bottom: 35px;">
+          <img src="C:\xampp\htdocs\feedback\Sri\food.jpg" class="water" style="height: 200px;">
+          <h4>Eat more frequently but make sure meals are balanced and light.</h4>
+        </div>
+        <div class="card swiper-slide" style="padding-bottom: 35px;">
+          <img src="C:\xampp\htdocs\feedback\Sri\child.jpg" class="water" style="height: 200px;">
+          <h4>Never leave children or pets alone in a closed vehicle.</h4>
+        </div>
+        <div class="card swiper-slide" style="padding-bottom: 35px;">
+          <img src="C:\xampp\htdocs\feedback\Sri\work.jpg" class="water" style="height: 200px;">
+          <h4>Take frequent breaks when working outdoors.</h4>
+        </div>
+      </div>
+      <div class="swiper-button-next swiper-navbtn"></div>
+        <div class="swiper-button-prev swiper-navbtn"></div>
+        <div class="swiper-pagination swiper-paging"></div>
+    </div>
+    <div class="slide-container">
+      <span class="slider-span" id="slider-span1"></span>
+      <span class="slider-span" id="slider-span2"></span>
+      <span class="slider-span" id="slider-span3"></span>
+      <span class="slider-span" id="slider-span4"></span>
+      <span class="slider-span" id="slider-span5"></span>
+      <span class="slider-span" id="slider-span6"></span>
+      <div class="image-slider">
+        <div class="slides-div" id="slide-1">
+          <img src="C:\xampp\htdocs\feedback\Sri\hot.jpg" alt="" id="img1" class="img">
+          <h4>Drink plenty of cool fluids, but avoid caffeine and alcohol.</h4>
+          <a href="#slider-span1" class="button" id="button-1"></a>
+        </div>
+        <div class="slides-div" id="slide-2">
+          <img src="C:\xampp\htdocs\feedback\Sri\Sunglass.jpg" alt="" id="img2" class="img"><br>
+          <h4>Dress in light, loose clothing. Wear a hat and sunglasses.</h4>
+          <a href="#slider-span2" class="button" id="button-2"></a>
+        </div>
+        <div class="slides-div" id="slide-3">
+          <img src="C:\xampp\htdocs\feedback\Sri\sunscreen.jpg" alt="" id="img3" class="img"><br>
+          <h4>Wear sunscreen with a high sun protection factor (SPF) to protect your skin from sunburn.</h4>
+        <a href="#slider-span3" class="button" id="button-3"></a>
+        </div>
+        
+        <div class="slides-div" id="slide-4">
+          <img src="C:\xampp\htdocs\feedback\Sri\food.jpg" alt="" id="img4" class="img"><br>
+          <h4>Eat more frequently but make sure meals are balanced and light.</h4>
+        <a href="#slider-span4" class="button" id="button-4"></a>
+        </div>
+        <div class="slides-div" id="slide-5">
+          <img src="C:\xampp\htdocs\feedback\Sri\child.jpg" alt="" id="img5" class="img"><br>
+          <h4>Never leave children or pets alone in a closed vehicle.</h4>
+        <a href="#slider-span5" class="button" id="button-5"></a>
+        </div>
+        <div class="slides-div" id="slide-6">
+          <img src="C:\xampp\htdocs\feedback\Sri\work.jpg" alt="" id="img6" class="img"><br>
+          <h4>Take frequent breaks when working outdoors.</h4>
+        <a href="#slider-span6" class="button" id="button-6"></a>
+        </div>
+      </div>
+    </div>
+  </body>
+  
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hot</title>
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="ex.css">
+  </head>
+  <body>
+    <div class="slide-containe swiper">
+      <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="C:\xampp\htdocs\feedback\Sri\hot.jpg" alt="" class="card-img">
+                </div>
+            </div>
+            <br>
+            <div class="card-content">
+              <h4 class="pre"><center>Drink plenty of cool fluids,<br>but avoid caffeine and alcohol.</center></h4><br>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="C:\xampp\htdocs\feedback\Sri\Sunglass.jpg" alt="" class="card-img">
+                </div>
+            </div>
+            <br>
+            <div class="card-content">
+              <h4 class="pre"><center>Dress in light, loose clothing.<br> Wear a hat and sunglasses.</center></h4><br>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="C:\xampp\htdocs\feedback\Sri\sunscreen.jpg" alt="" class="card-img">
+                </div>
+            </div>
+            <br>
+            <div class="card-content">
+              <h4 class="pre"><center>Wear sunscreen with a high sun protection factor <br>(SPF) to protect your skin from sunburn.</center></h4><br>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="C:\xampp\htdocs\feedback\Sri\food.jpg" alt="" class="card-img">
+                </div>
+            </div>
+            <br>
+            <div class="card-content">
+              <h4 class="pre"><center>Eat more frequently but make sure<br> meals are balanced and light.</center></h4><br>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="C:\xampp\htdocs\feedback\Sri\child.jpg" alt="" class="card-img">
+                </div>
+            </div>
+            <br>
+            <div class="card-content">
+              <h4 class="pre"><center>Never leave children or pets <br>alone in a closed vehicle.</center></h4><br>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="C:\xampp\htdocs\feedback\Sri\work.jpg" alt="" class="card-img">
+                </div>
+            </div>
+            <br>
+            <div class="card-content">
+              <h4 class="pre"><center>Take frequent breaks when <br>working outdoors.</center></h4><br>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next swiper-navbtn"></div>
+      <div class="swiper-button-prev swiper-navbtn"></div>
+      <div class="swiper-pagination"></div>
+
+    </div>
+    
+  </body>
+      <script src="swiper-bundle.min.js"></script>
+      <script src="ex.js"></script>
+</html-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Date</title>
+    <link rel="stylesheet" href="ex.css">
+  </head>
+  <body>
+    <div class="weather-app">
+      <div class="container">
+        <h3 class="brand">The weather</h3>
+          <div>
+            <h1 class="temp">16&#176;</h1>
+            <div class="city-time">
+              <h1 class="name">London</h1>
+              <small>
+                <span class="time">06:09</span>
+                <span class="date">Monday Sep 19</span>
+              </small>
+            </div>
+            <div class="weather">
+              <span class="condition">Cloudy</span>
+            </div>
+          </div>
+      </div>
+    </div>
+  </body>
+  <script src="ex.js"></script>
+</html>

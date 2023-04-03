@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    height: 100vh;
+
+}
+.container{
+    height:100vh;
+    width: 100%;
+    background-image: url(./homeb.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+nav{
+    flex: 1;
+    padding-left: 60px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    font-size: 20px;
+    margin: 0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+}
+nav ul li a:hover{
+    color:#7f7f7f;
+    
+}
+nav li.active a{
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+}
+#but{
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    align-content: flex-end;
+}
+.login{
+    float: right;
+    color: black;
+    border: 2px solid #333;
+    padding:7px;  
+    border-radius: 10px;  
+    background-color:rgb(173, 247, 222);
+}
+.login:hover{
+    background-color: white;
+    box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.75);
+}
+
+
+
+.tcontainer{
+    position: relative;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+}
+.addTask{
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+}
+.addTask > input[type="text"]{
+    width: 90%;
+    color: #333;
+    border: none;
+    border-bottom: 2px solid #666;
+    background: none;
+    padding: 10px;
+    font-size: 22px;
+    outline: none;
+}
+.addTask button{
+    margin: 0 10px;
+    background: #222;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.notCompleted, .Completed{
+    margin: 5px 0;
+    padding: 20px;
+}
+h3{
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+}
+ol{
+    list-style: none;
+}
+ol li{
+    width: 100%;
+    padding: 18px;
+    margin: 5px 0;
+    font-size: 22px;
+    counter-increment: my-counter;
+}
+ol li::before{
+    content: counter(my-counter);
+    background: linear-gradient(to right, #9AFBFA,#D071F9) ;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 2rem;
+    text-align: center;
+    margin-right: 1.5rem;
+}
+li button{
+    float: right;
+    padding: 5px;
+    font-size: 28px;
+    line-height: 28px;
+    margin-right: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+

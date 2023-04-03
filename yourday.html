@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>About your day</title>
+    <link rel="stylesheet" href="yourday.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="C:\Users\Srisakthi\Desktop\Sri\logo.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="schedule.html">Calendar</a></li>
+                    <li><a href="weather.html">Weather</a></li>
+                    <li><a href="todolist.html">To Do List</a></li>
+                    <li class="active"><a href="yourday.html">About Your Day</a></li>
+                    <button class="login"><a href="#" class="but" id="but">LogOut</a></button>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="co">
+            <h2>
+                <center>How was your day?😀</center>
+            </h2>
+
+            <div class="con">
+                <div class="cont">
+
+                    <label class="labels"></label>
+                    <div class="textarea-style">
+                        <textarea class="textarea" name="textarea" id="txt" cols="37" rows="4" maxlength="100"
+                            minlength="3"></textarea>
+                    </div>
+                    <span class="textarea-count"></span>
+                    <center><button class="button" id="btn">Submit</button></center>
+
+                </div>
+
+            </div>
+        </div>
+        <div id="rs" style="display: none;"></div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        let i = 1;
+        $(document).on('click', 'ul li', function () {
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+
+        const txt = document.getElementById('txt');
+        const btn = document.getElementById('btn');
+        const out = document.getElementById('rs');
+
+        btn.addEventListener('click', function () {
+            if (txt.value != "") {
+                out.style.display = 'block';
+                var div = document.createElement("div");
+                div.className = "rs";
+                div.id = "text" + i;
+                div.innerHTML += "<li class='content' id='text" + i + "'>" + txt.value + "</li><a href='#' class='rem'>&#10006;</a>";
+                out.appendChild(div);
+                txt.value = "";
+                i++;
+            }
+        })
+        document.onclick = function (event) {
+            var target = event.target || event.srcElement;
+            if (target.className == "rem") {
+                if (confirm("Do you want to remove it")) {
+                    var child = document.getElementById(target.previousElementSibling.id);
+                    out.removeChild(child);
+                }
+
+            }
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
